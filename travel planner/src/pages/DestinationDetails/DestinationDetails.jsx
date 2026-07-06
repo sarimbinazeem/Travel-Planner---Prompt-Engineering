@@ -11,6 +11,14 @@ import DestinationHero from "../../components/destination/DestinationHero";
 import DestinationInfo from "../../components/destination/DestinationInfo";
 import MapPlaceholder from "../../components/destination/MapPlaceholder";
 
+import usePlaces from "../../hooks/usePlaces";
+
+import PlacesSection from "../../components/places/PlacesSection";
+
+import BudgetCard from "../../components/budget/BudgetCard";
+
+import { estimateBudget } from "../../utils/budgetEstimator";
+
 function DestinationDetails() {
 
     const { state } = useLocation();
@@ -26,6 +34,18 @@ function DestinationDetails() {
         destination?.longitude
     );
 
+    const {
+        hotels,
+        attractions,
+        transportation,
+        loading: placesLoading,
+        error: placesError,
+    } = usePlaces(
+        destination.latitude,
+        destination.longitude
+    );
+
+    const budget = estimateBudget();
 
 
     useDocumentTitle(destination?.city || "Destination");
@@ -117,6 +137,51 @@ function DestinationDetails() {
                     </section>
 
                 </h2>
+
+                {placesLoading && (
+                    <section className="mt-10 rounded-2xl border bg-white p-8 shadow">
+                        <p>Loading nearby places...</p>
+                    </section>
+                )}
+
+                {placesError && (
+                    <section className="mt-10 rounded-2xl border border-red-200 bg-red-50 p-8">
+                        <p className="text-red-600">
+                            {placesError}
+                        </p>
+                    </section>
+                )}
+
+                {!placesLoading && !placesError && (
+                    <>
+                        <div className="mt-10">
+                            <PlacesSection
+                                title="🏨 Nearby Hotels"
+                                places={hotels}
+                            />
+                        </div>
+
+                        <div className="mt-10">
+                            <PlacesSection
+                                title="📍 Tourist Attractions"
+                                places={attractions}
+                            />
+                        </div>
+
+                        <div className="mt-10">
+                            <PlacesSection
+                                title="🚌 Transportation"
+                                places={transportation}
+                            />
+                        </div>
+                    </>
+                )}
+
+                <div className="mt-10">
+                    <BudgetCard budget={budget} />
+                </div>
+
+                const budget = estimateBudget();
 
                 <div className="grid gap-4 md:grid-cols-2">
 
