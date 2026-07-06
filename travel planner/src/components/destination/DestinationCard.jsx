@@ -1,30 +1,56 @@
+import { Link } from "react-router-dom";
+
 function DestinationCard({ destination }) {
     return (
-        <div
+        <article
             className="
                 rounded-xl
                 border
                 border-gray-200
                 bg-white
-                p-5
+                p-6
                 shadow-sm
-                transition
+                transition-all
+                duration-300
                 hover:-translate-y-1
-                hover:shadow-lg
+                hover:shadow-xl
             "
         >
-            <h2 className="text-xl font-bold">
-                {destination.city}
-            </h2>
+            <div className="space-y-2">
 
-            <p className="text-gray-600">
-                {destination.country}
-            </p>
+                <h2 className="text-2xl font-bold">
+                    📍 {destination.city}
+                </h2>
 
-            <p className="mt-3 text-sm text-gray-500">
-                {destination.formatted}
-            </p>
-        </div>
+                <p className="text-lg text-gray-700">
+                    🌍 {destination.country}
+                </p>
+
+                <p className="text-sm text-gray-500">
+                    {destination.formatted}
+                </p>
+
+            </div>
+            <Link
+                to={`/destination/${destination.id}`}
+                state={{ destination }}
+                className="
+                    mt-6
+                    inline-flex
+                    items-center
+                    rounded-lg
+                    bg-blue-600
+                    px-5
+                    py-2.5
+                    font-medium
+                    text-white
+                    transition
+                    hover:bg-blue-700
+                "
+            >
+                View Details →
+            </Link>
+        </article>
     );
 }
 

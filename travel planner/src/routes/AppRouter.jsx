@@ -15,7 +15,7 @@ function AppRouter() {
                     <Route path="/" element={<Home />} />
 
                     <Route
-                        path="/destination"
+                        path="/destination/:placeId"
                         element={<DestinationDetails />}
                     />
                 </Route>

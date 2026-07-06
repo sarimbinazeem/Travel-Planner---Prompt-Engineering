@@ -30,3 +30,24 @@ export async function searchDestinations(searchText) {
 
     return data.features;
 }
+
+export async function getDestinationById(placeId) {
+    const url =
+        `https://api.geoapify.com/v1/geocode/search?` +
+        `filter=place:${placeId}` +
+        `&apiKey=${API_KEY}`;
+
+    const response = await fetch(url);
+
+    if (!response.ok) {
+        throw new Error("Unable to load destination.");
+    }
+
+    const data = await response.json();
+
+    if (!data.features.length) {
+        throw new Error("Destination not found.");
+    }
+
+    return data.features[0];
+}
