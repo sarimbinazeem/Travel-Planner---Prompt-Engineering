@@ -11,12 +11,12 @@ const weatherIcons = {
     Fog: "🌫️",
 };
 
-const weatherIcon =
-    weatherIcons[weather.main] || "🌤️";
 
 
 function WeatherCard({ weather }) {
-    const iconUrl = `https://openweathermap.org/img/wn/${weather.icon}@2x.png`;
+
+    
+    const weatherIcon =weatherIcons[weather.main] || "🌤️";
 
     return (
         <section
