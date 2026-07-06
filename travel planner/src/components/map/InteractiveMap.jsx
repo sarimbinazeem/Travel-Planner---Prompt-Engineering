@@ -15,7 +15,7 @@ function InteractiveMap({
             center={[latitude, longitude]}
             zoom={12}
             scrollWheelZoom={false}
-            className="h-[400px] rounded-2xl shadow"
+            className="h-[450px] w-full rounded-3xl"
         >
 
             <TileLayer

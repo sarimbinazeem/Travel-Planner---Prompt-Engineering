@@ -13,34 +13,37 @@ function DestinationInfo({ destination }) {
                 Destination Information
             </h2>
 
-            <div className="space-y-4">
+            <div className="grid gap-5">
 
-                <p>
-                    <strong>Country:</strong>{" "}
-                    {destination.country}
-                </p>
+            {[
+                ["Country", destination.country],
+                ["State", destination.state || "N/A"],
+                ["Latitude", destination.latitude],
+                ["Longitude", destination.longitude],
+                ["Address", destination.formatted],
+            ].map(([label, value]) => (
+                <div
+                    key={label}
+                    className="
+                        flex
+                        items-start
+                        justify-between
+                        rounded-2xl
+                        bg-slate-50
+                        p-4
+                    "
+                >
+                    <span className="font-semibold text-slate-600">
+                        {label}
+                    </span>
 
-                <p>
-                    <strong>State:</strong>{" "}
-                    {destination.state || "N/A"}
-                </p>
+                    <span className="max-w-[60%] text-right font-medium">
+                        {value}
+                    </span>
+                </div>
+            ))}
 
-                <p>
-                    <strong>Latitude:</strong>{" "}
-                    {destination.latitude}
-                </p>
-
-                <p>
-                    <strong>Longitude:</strong>{" "}
-                    {destination.longitude}
-                </p>
-
-                <p>
-                    <strong>Address:</strong>{" "}
-                    {destination.formatted}
-                </p>
-
-            </div>
+        </div>
         </section>
     );
 }

@@ -36,14 +36,15 @@ function SearchBar({ onSearch, loading }) {
                 px-6
                 py-4
                 text-lg
+                outline-none
                 transition-all
                 duration-300
                 focus:border-blue-600
                 focus:bg-white
                 focus:ring-4
                 focus:ring-blue-100
-                outline-none
-"
+
+                "
             />
 
             <button
@@ -63,7 +64,7 @@ function SearchBar({ onSearch, loading }) {
                 hover:shadow-xl
                 active:scale-95
                 "
-                            >
+               >
                 {loading ? "Searching..." : "Search"}
             </button>
         </form>

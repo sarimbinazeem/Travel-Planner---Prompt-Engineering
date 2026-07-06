@@ -155,6 +155,9 @@ function Home() {
             >
                 Explore
             </p>
+                {/* Results */}
+                               
+                <DestinationGrid destinations={destinations} />
 
             <h2 className="mt-2 text-4xl font-black">
 
@@ -192,100 +195,150 @@ function Home() {
         </div>
       </section>
 
+
       {/* Error */}
 
       {error && <p className="mt-6 text-center text-red-600">{error}</p>}
 
-      <section>
+    <section>
         <div className="mb-8">
 
             <p
                 className="
-                text-sm
-                font-semibold
-                uppercase
-                tracking-[0.25em]
-                text-blue-600
+                    text-sm
+                    font-semibold
+                    uppercase
+                    tracking-[0.25em]
+                    text-blue-600
                 "
             >
                 Features
             </p>
 
             <h2 className="mt-2 text-4xl font-black">
-
                 Everything You Need
-
             </h2>
 
         </div>
 
         <div
-          className="
-                    grid
-                    gap-6
-                    md:grid-cols-2
-                    xl:grid-cols-3
-                    "
+            className="
+                grid
+                gap-6
+                md:grid-cols-2
+                xl:grid-cols-3
+            "
         >
-          {[
-            {
-              icon: "🌤️",
-              title: "Weather",
-              text: "Real-time weather forecasts.",
-            },
-            {
-              icon: "🏨",
-              title: "Hotels",
-              text: "Find nearby accommodations.",
-            },
-            {
-              icon: "💰",
-              title: "Budget",
-              text: "Estimate your trip expenses.",
-            },
-            {
-              icon: "📍",
-              title: "Attractions",
-              text: "Discover famous places nearby.",
-            },
-            {
-              icon: "🚌",
-              title: "Transportation",
-              text: "Explore travel options.",
-            },
-            {
-              icon: "🗺️",
-              title: "Interactive Map",
-              text: "Visualize every destination.",
-            },
-          ].map((feature) => (
-            <article
-              key={feature.title}
-              className="
-                            rounded-3xl
-                            border
-                            bg-white
-                            p-8
-                            shadow-sm
+            {[
+                {
+                    icon: "🌤️",
+                    title: "Weather",
+                    text: "Real-time weather forecasts.",
+                },
+                {
+                    icon: "🏨",
+                    title: "Hotels",
+                    text: "Find nearby accommodations.",
+                },
+                {
+                    icon: "💰",
+                    title: "Budget",
+                    text: "Estimate your trip expenses.",
+                },
+                {
+                    icon: "📍",
+                    title: "Attractions",
+                    text: "Discover famous places nearby.",
+                },
+                {
+                    icon: "🚌",
+                    
+                    title: "Transportation",
+                    text: "Explore travel options.",
+                },
+                {
+                    icon: "🗺️",
+                    title: "Interactive Map",
+                    text: "Visualize every destination.",
+                },
+            ].map((feature) => (
+                <article
+                    key={feature.title}
+                    className="
+                        group
+                        rounded-3xl
+                        border
+                        border-slate-200
+                        bg-white
+                        p-8
+                        shadow-lg
+                        transition-all
+                        duration-300
+                        hover:-translate-y-3
+                        hover:border-blue-200
+                        hover:shadow-2xl
+                    "
+                >
+                    <div
+                        className="
+                            flex
+                            h-16
+                            w-16
+                            items-center
+                            justify-center
+                            rounded-2xl
+                            bg-blue-50
+                            text-3xl
                             transition-all
                             duration-300
-                            hover:-translate-y-2
-                            hover:shadow-xl
-                            "
-            >
-              <div className="text-5xl">{feature.icon}</div>
+                            group-hover:scale-110
+                            group-hover:bg-gradient-to-r
+                            group-hover:from-blue-600
+                            group-hover:to-cyan-500
+                        "
+                    >
+                        {feature.icon}
+                    </div>
 
-              <h3 className="mt-6 text-xl font-bold">{feature.title}</h3>
+                    <h3
+                        className="
+                            mt-6
+                            text-xl
+                            font-bold
+                            text-slate-800
+                            transition-colors
+                            group-hover:text-blue-600
+                        "
+                    >
+                        {feature.title}
+                    </h3>
 
-              <p className="mt-4">{feature.text}</p>
-            </article>
-          ))}
+                    <div
+                        className="
+                            mt-3
+                            h-1
+                            w-14
+                            rounded-full
+                            bg-gradient-to-r
+                            from-blue-600
+                            to-cyan-400
+                        "
+                    />
+
+                    <p
+                        className="
+                            mt-4
+                            leading-7
+                            text-slate-500
+                        "
+                    >
+                        {feature.text}
+                    </p>
+                </article>
+            ))}
         </div>
-      </section>
+    </section>
 
-      {/* Results */}
-
-      <DestinationGrid destinations={destinations} />
     </main>
   );
 }

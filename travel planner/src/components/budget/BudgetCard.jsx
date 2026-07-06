@@ -35,9 +35,18 @@ function BudgetCard({ budget }) {
                     <span>${budget.transport}</span>
                 </div>
 
-                <hr />
+                <div
+                    className="
+                        my-5
+                        h-px
+                        bg-gradient-to-r
+                        from-transparent
+                        via-slate-300
+                        to-transparent
+                    "
+                />
 
-                <div className="flex justify-between text-xl font-bold">
+                <div className="flex justify-between text-2xl font-bold text-emerald-600">
                     <span>Total</span>
                     <span>${budget.total}</span>
                 </div>

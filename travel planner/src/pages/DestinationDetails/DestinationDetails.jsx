@@ -63,7 +63,7 @@ function DestinationDetails() {
 
         return (
 
-            <main className="mx-auto max-w-5xl px-6 py-16">
+            <main className="page-container py-10 space-y-10">
 
                 <div className="rounded-xl border border-red-200 bg-red-50 p-8 text-center">
 
@@ -105,7 +105,7 @@ function DestinationDetails() {
 
     return (
 
-        <main className="mx-auto max-w-7xl px-6 py-12">
+        <main className="page-container py-10 space-y-10">
 
             <DestinationHero destination={destination} />
 
@@ -201,8 +201,6 @@ function DestinationDetails() {
                 <div className="mt-10">
                     <BudgetCard budget={budget} />
                 </div>
-
-                const budget = estimateBudget();
 
                 <div className="grid gap-4 md:grid-cols-2">
 

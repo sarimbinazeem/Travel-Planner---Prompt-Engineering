@@ -6,17 +6,19 @@ function PlaceCard({ place }) {
     const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
     return (
             <article
-                className="
-                    rounded-xl
-                    border
-                    bg-white
-                    p-5
-                    shadow-sm
-                    transition-all
-                    duration-300
-                    hover:-translate-y-2
-                    hover:shadow-xl
-                "
+            className="
+                group
+                rounded-3xl
+                border
+                border-slate-200
+                bg-white
+                p-6
+                shadow-lg
+                transition-all
+                duration-300
+                hover:-translate-y-2
+                hover:shadow-2xl
+            "
             >
 
             <h3 className="text-lg font-bold">
@@ -38,16 +40,22 @@ function PlaceCard({ place }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                    mt-5
+                    mt-6
                     inline-flex
                     items-center
-                    rounded-lg
-                    bg-blue-600
-                    px-4
-                    py-2
+                    rounded-xl
+                    bg-gradient-to-r
+                    from-blue-600
+                    to-cyan-500
+                    px-5
+                    py-3
+                    font-semibold
                     text-white
-                    transition
-                    hover:bg-blue-700
+                    shadow-md
+                    transition-all
+                    duration-300
+                    hover:-translate-y-1
+                    hover:shadow-xl
                 "
             >
                 Open in Google Maps

@@ -8,13 +8,12 @@ function Navbar() {
             top-0
             z-50
             border-b
-            border-slate-200/70
+            border-slate-200
             bg-white/80
             backdrop-blur-xl
             shadow-sm
             "
         >
-
             <nav
                 className="
                 page-container
@@ -24,11 +23,10 @@ function Navbar() {
                 justify-between
                 "
             >
-
-                {/* Logo */}
-
-                <div className="flex items-center gap-3">
-
+                <NavLink
+                    to="/"
+                    className="flex items-center gap-3"
+                >
                     <div
                         className="
                         flex
@@ -40,20 +38,15 @@ function Navbar() {
                         bg-gradient-to-br
                         from-blue-600
                         to-cyan-500
-                        text-2xl
+                        text-xl
                         text-white
                         shadow-lg
                         "
                     >
-
                         ✈️
-
                     </div>
 
-                    <NavLink
-                        to="/"
-                        className="leading-tight"
-                    >
+                    <div>
 
                         <h2 className="text-xl font-bold text-slate-900">
 
@@ -61,17 +54,15 @@ function Navbar() {
 
                         </h2>
 
-                        <p className="text-xs text-slate-500">
+                        <p className="text-sm text-slate-500">
 
                             Explore Smarter
 
                         </p>
 
-                    </NavLink>
+                    </div>
 
-                </div>
-
-                {/* Navigation */}
+                </NavLink>
 
                 <div className="flex items-center gap-3">
 
@@ -80,21 +71,19 @@ function Navbar() {
                         className={({ isActive }) =>
                             `
                             rounded-xl
-                            px-4
+                            px-5
                             py-2
                             font-medium
                             transition-all
                             ${
                                 isActive
                                     ? "bg-blue-600 text-white"
-                                    : "text-slate-600 hover:bg-blue-50 hover:text-blue-600"
+                                    : "text-slate-700 hover:bg-blue-50 hover:text-blue-600"
                             }
                             `
                         }
                     >
-
                         Home
-
                     </NavLink>
 
                     <NavLink
@@ -102,21 +91,19 @@ function Navbar() {
                         className={({ isActive }) =>
                             `
                             rounded-xl
-                            px-4
+                            px-5
                             py-2
                             font-medium
                             transition-all
                             ${
                                 isActive
                                     ? "bg-blue-600 text-white"
-                                    : "text-slate-600 hover:bg-blue-50 hover:text-blue-600"
+                                    : "text-slate-700 hover:bg-blue-50 hover:text-blue-600"
                             }
                             `
                         }
                     >
-
                         Destination
-
                     </NavLink>
 
                 </div>

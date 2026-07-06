@@ -1,12 +1,19 @@
 import PlaceCard from "./PlaceCard";
-
+import EmptyState from "../common/EmptyState"
 
 function PlacesSection({ title, places }) {
     return (
         <section className="rounded-2xl border bg-white p-8 shadow">
 
-            <h2 className="text-4xl
-                        md:text-6xl font-bold">
+            <h2 
+                className="
+                    mb-8
+                    text-3xl
+                    font-black
+                    text-slate-800
+                    md:text-4xl
+                "
+            >
                 {title}
             </h2>
 
