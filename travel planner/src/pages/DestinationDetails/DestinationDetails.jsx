@@ -19,6 +19,15 @@ import BudgetCard from "../../components/budget/BudgetCard";
 
 import { estimateBudget } from "../../utils/budgetEstimator";
 
+import InteractiveMap from "../../components/map/InteractiveMap";
+
+import SkeletonCard from "../../components/common/SkeletonCard";
+import ErrorCard from "../../components/common/ErrorCard";
+
+
+
+
+
 function DestinationDetails() {
 
     const { state } = useLocation();
@@ -104,7 +113,11 @@ function DestinationDetails() {
 
                 <DestinationInfo destination={destination} />
 
-                <MapPlaceholder />
+                <InteractiveMap
+                    latitude={destination.latitude}
+                    longitude={destination.longitude}
+                    city={destination.city}
+                />
 
             </section>
 
@@ -121,7 +134,7 @@ function DestinationDetails() {
                             <div className="rounded-xl border border-red-200 bg-red-50 p-6">
 
                                 <p className="text-red-600">
-                                    {error}
+                                    <ErrorCard message={error} />
                                 </p>
 
                             </div>
@@ -139,15 +152,23 @@ function DestinationDetails() {
                 </h2>
 
                 {placesLoading && (
-                    <section className="mt-10 rounded-2xl border bg-white p-8 shadow">
-                        <p>Loading nearby places...</p>
+                    <section className="mt-10 grid gap-4 md:grid-cols-2">
+
+                        <SkeletonCard />
+
+                        <SkeletonCard />
+
+                        <SkeletonCard />
+
+                        <SkeletonCard />
+
                     </section>
                 )}
 
                 {placesError && (
                     <section className="mt-10 rounded-2xl border border-red-200 bg-red-50 p-8">
                         <p className="text-red-600">
-                            {placesError}
+                            <ErrorCard message={placesError} />
                         </p>
                     </section>
                 )}

@@ -1,5 +1,6 @@
 import PlaceCard from "./PlaceCard";
 
+
 function PlacesSection({ title, places }) {
     return (
         <section className="rounded-2xl border bg-white p-8 shadow">
@@ -10,7 +11,11 @@ function PlacesSection({ title, places }) {
 
             {places.length === 0 ? (
                 <p className="text-gray-500">
-                    No results found.
+                    <EmptyState
+                        icon="📍"
+                        title="Nothing Found"
+                        message="No nearby places were found for this category."
+                    />
                 </p>
             ) : (
                 <div className="grid gap-4 md:grid-cols-2">
