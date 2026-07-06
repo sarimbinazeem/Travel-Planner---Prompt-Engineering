@@ -1,17 +1,16 @@
 function DestinationHero({ destination }) {
     return (
             <section className="
-            relative
-            overflow-hidden
-            rounded-3xl
-            bg-gradient-to-r
-            from-blue-700
-            via-blue-600
-            to-cyan-500
-            p-10
-            text-white
-            shadow-xl
+            rounded-xl
+            bg-white/15
+            p-5
+            backdrop-blur
+            transition-all
+            duration-300
+            hover:bg-white/20
+            hover:-translate-y-1
             ">
+                
             <p className="text-lg opacity-90">
                 Explore
             </p>
@@ -20,25 +19,47 @@ function DestinationHero({ destination }) {
                 {destination.city}
             </h1>
 
-            <p className="mt-3 text-xl text-blue-100">
-                📍 {destination.country}
-            </p>
+            <div className="mt-10 grid gap-4 md:grid-cols-3">
 
-            <div className="mt-8 flex flex-wrap gap-4">
+                <div className="rounded-xl bg-white/15 p-5 backdrop-blur">
 
-                <div className="rounded-full bg-white/20 px-4 py-2">
+                    <p className="text-sm text-blue-100">
+                        Country
+                    </p>
 
-                    🌍 Latitude: {destination.latitude}
+                    <h3 className="mt-2 text-xl font-semibold">
+                        {destination.country}
+                    </h3>
 
                 </div>
 
-                <div className="rounded-full bg-white/20 px-4 py-2">
+                <div className="rounded-xl bg-white/15 p-5 backdrop-blur">
 
-                    🌎 Longitude: {destination.longitude}
+                    <p className="text-sm text-blue-100">
+                        Latitude
+                    </p>
+
+                    <h3 className="mt-2 text-xl font-semibold">
+                        {destination.latitude}
+                    </h3>
+
+                </div>
+
+                <div className="rounded-xl bg-white/15 p-5 backdrop-blur">
+
+                    <p className="text-sm text-blue-100">
+                        Longitude
+                    </p>
+
+                    <h3 className="mt-2 text-xl font-semibold">
+                        {destination.longitude}
+                    </h3>
 
                 </div>
 
             </div>
+
+        
         </section>
     );
 }

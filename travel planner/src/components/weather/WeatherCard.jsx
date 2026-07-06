@@ -1,61 +1,85 @@
 import WeatherItem from "./WeatherItem";
 
+const weatherIcons = {
+    Clear: "☀️",
+    Clouds: "☁️",
+    Rain: "🌧️",
+    Drizzle: "🌦️",
+    Thunderstorm: "⛈️",
+    Snow: "❄️",
+    Mist: "🌫️",
+    Fog: "🌫️",
+};
+
+const weatherIcon =
+    weatherIcons[weather.main] || "🌤️";
+
+
 function WeatherCard({ weather }) {
     const iconUrl = `https://openweathermap.org/img/wn/${weather.icon}@2x.png`;
 
     return (
-        <section className="rounded-2xl border bg-white p-8 shadow">
+        <section
+            className="
+                rounded-2xl
+                border
+                bg-white
+                p-8
+                shadow
+                transition-all
+                duration-300
+                hover:-translate-y-1
+                hover:shadow-xl
+            "
+        >
+            <div className="text-center">
 
-            <h2 className="mb-6 text-2xl font-bold">
-                Current Weather
-            </h2>
+                <div className="text-6xl">
+                    {weatherIcon}
+                </div>
 
-            <div className="flex items-center justify-between">
+                <h2 className="mt-4 text-5xl font-bold">
+                    {Math.round(weather.temperature)}°C
+                </h2>
 
-                <div>
+                <p className="mt-2 text-lg text-gray-500">
+                    Feels like {Math.round(weather.feelsLike)}°C
+                </p>
 
-                    <h3 className="text-5xl font-bold">
-                        {weather.temperature}°C
-                    </h3>
+                <p className="mt-2 text-xl font-semibold">
+                    {weather.description.charAt(0).toUpperCase() +
+                    weather.description.slice(1)}
+                </p>
 
-                    <p className="mt-2 text-lg capitalize text-gray-600">
-                        {weather.description}
+            </div>
+
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+
+                <div className="rounded-xl bg-gray-100 p-4 text-center">
+
+                    <p className="text-gray-500">
+                        💧 Humidity
                     </p>
+
+                    <h3 className="mt-2 text-xl font-bold">
+                        {weather.humidity}%
+                    </h3>
 
                 </div>
 
-                <img
-                    src={iconUrl}
-                    alt={weather.description}
-                    className="h-24 w-24"
-                />
+                <div className="rounded-xl bg-gray-100 p-4 text-center">
+
+                    <p className="text-gray-500">
+                        💨 Wind
+                    </p>
+
+                    <h3 className="mt-2 text-xl font-bold">
+                        {weather.windSpeed} km/h
+                    </h3>
+
+                </div>
 
             </div>
-
-            <div className="mt-8">
-
-                <WeatherItem
-                    label="Feels Like"
-                    value={`${weather.feelsLike}°C`}
-                />
-
-                <WeatherItem
-                    label="Humidity"
-                    value={`${weather.humidity}%`}
-                />
-
-                <WeatherItem
-                    label="Wind Speed"
-                    value={`${weather.windSpeed} m/s`}
-                />
-
-                <WeatherItem
-                    label="Pressure"
-                    value={`${weather.pressure} hPa`}
-                />
-
-            </div>
-
         </section>
     );
 }

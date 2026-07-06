@@ -1,6 +1,18 @@
 function BudgetCard({ budget }) {
     return (
-        <section className="rounded-2xl border bg-white p-8 shadow">
+        <section
+            className="
+                rounded-2xl
+                border
+                bg-white
+                p-8
+                shadow
+                transition-all
+                duration-300
+                hover:-translate-y-1
+                hover:shadow-xl
+            "
+        >
 
             <h2 className="mb-6 text-2xl font-bold">
                 Estimated Budget
