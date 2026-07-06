@@ -1,30 +1,38 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
     return (
         <header className="bg-blue-600 text-white shadow-md">
             <nav className="container mx-auto flex items-center justify-between px-4 py-4">
-                <Link
+                <NavLink
                     to="/"
                     className="text-2xl font-bold tracking-wide"
                 >
                     Travel Planner
-                </Link>
+                </NavLink>
 
                 <div className="flex items-center gap-6">
-                    <Link
+                    <NavLink
                         to="/"
-                        className="hover:text-blue-200 transition-colors"
+                        className={({ isActive }) =>
+                            isActive
+                                ? "text-blue-200 font-semibold"
+                                : "hover:text-blue-200 transition-colors"
+                        }
                     >
                         Home
-                    </Link>
+                    </NavLink>
 
-                    <Link
+                    <NavLink
                         to="/destination"
-                        className="hover:text-blue-200 transition-colors"
+                        className={({ isActive }) =>
+                            isActive
+                                ? "text-blue-200 font-semibold"
+                                : "hover:text-blue-200 transition-colors"
+                        }
                     >
                         Destination
-                    </Link>
+                    </NavLink>
                 </div>
             </nav>
         </header>
