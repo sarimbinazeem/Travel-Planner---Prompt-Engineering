@@ -2,6 +2,11 @@ import { useLocation, Link } from "react-router-dom";
 
 import useDocumentTitle from "../../hooks/useDocumentTitle";
 
+import useWeather from "../../hooks/useWeather";
+
+import WeatherCard from "../../components/weather/WeatherCard";
+import WeatherLoading from "../../components/weather/WeatherLoading";
+
 import DestinationHero from "../../components/destination/DestinationHero";
 import DestinationInfo from "../../components/destination/DestinationInfo";
 import MapPlaceholder from "../../components/destination/MapPlaceholder";
@@ -11,6 +16,17 @@ function DestinationDetails() {
     const { state } = useLocation();
 
     const destination = state?.destination;
+
+    const {
+        weather,
+        loading,
+        error,
+    } = useWeather(
+        destination?.latitude,
+        destination?.longitude
+    );
+
+
 
     useDocumentTitle(destination?.city || "Destination");
 
@@ -76,7 +92,29 @@ function DestinationDetails() {
 
                 <h2 className="mb-6 text-2xl font-bold">
 
-                    Upcoming Travel Information
+                   <section className="mt-10">
+
+                        {loading && <WeatherLoading />}
+
+                        {!loading && error && (
+
+                            <div className="rounded-xl border border-red-200 bg-red-50 p-6">
+
+                                <p className="text-red-600">
+                                    {error}
+                                </p>
+
+                            </div>
+
+                        )}
+
+                        {!loading && weather && (
+
+                            <WeatherCard weather={weather} />
+
+                        )}
+
+                    </section>
 
                 </h2>
 
