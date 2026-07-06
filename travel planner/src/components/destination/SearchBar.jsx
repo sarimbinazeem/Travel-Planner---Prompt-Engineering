@@ -12,7 +12,13 @@ function SearchBar({ onSearch, loading }) {
     return (
         <form
             onSubmit={handleSubmit}
-            className="flex flex-col gap-4 md:flex-row"
+            className="
+                flex
+                flex-col
+                gap-4
+                md:flex-row
+                md:items-center
+                "
         >
             <input
                 type="text"
@@ -22,32 +28,42 @@ function SearchBar({ onSearch, loading }) {
                     setSearchText(event.target.value)
                 }
                 className="
-                    flex-1
-                    rounded-lg
-                    border
-                    border-gray-300
-                    px-4
-                    py-3
-                    outline-none
-                    focus:border-blue-500
-                "
+                flex-1
+                rounded-2xl
+                border
+                border-slate-300
+                bg-slate-50
+                px-6
+                py-4
+                text-lg
+                transition-all
+                duration-300
+                focus:border-blue-600
+                focus:bg-white
+                focus:ring-4
+                focus:ring-blue-100
+                outline-none
+"
             />
 
             <button
-                type="submit"
-                disabled={loading}
                 className="
-                    rounded-lg
-                    bg-blue-600
-                    px-6
-                    py-3
-                    text-white
-                    transition
-                    hover:bg-blue-700
-                    disabled:cursor-not-allowed
-                    disabled:opacity-50
+                rounded-2xl
+                bg-gradient-to-r
+                from-blue-600
+                to-cyan-500
+                px-8
+                py-4
+                font-semibold
+                text-white
+                shadow-lg
+                transition-all
+                duration-300
+                hover:-translate-y-1
+                hover:shadow-xl
+                active:scale-95
                 "
-            >
+                            >
                 {loading ? "Searching..." : "Search"}
             </button>
         </form>

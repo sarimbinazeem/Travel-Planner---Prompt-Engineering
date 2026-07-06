@@ -53,7 +53,10 @@ function WeatherCard({ weather }) {
 
             </div>
 
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            <div className="mt-8 grid
+                            gap-6
+                            sm:grid-cols-2
+                            xl:grid-cols-3">
 
                 <div className="rounded-xl bg-gray-100 p-4 text-center">
 

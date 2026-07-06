@@ -19,7 +19,11 @@ function DestinationHero({ destination }) {
                 {destination.city}
             </h1>
 
-            <div className="mt-10 grid gap-4 md:grid-cols-3">
+            <div className="mt-10                 
+                grid
+                gap-6
+                sm:grid-cols-2
+                lg:grid-cols-3">
 
                 <div className="rounded-xl bg-white/15 p-5 backdrop-blur">
 

@@ -7,6 +7,8 @@ import "leaflet/dist/leaflet.css";
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
-        <App />
-    </StrictMode>
+        <div className="min-h-screen bg-slate-50 text-slate-900">
+            <App />
+        </div>
+        </StrictMode>
 );

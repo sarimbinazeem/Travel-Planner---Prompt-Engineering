@@ -4,16 +4,16 @@ function DestinationCard({ destination }) {
     return (
         <article
             className="
-                rounded-xl
+                rounded-3xl
                 border
                 border-gray-200
                 bg-white
                 p-6
-                shadow-sm
+                shadow-lg
                 transition-all
                 duration-300
-                hover:-translate-y-1
-                hover:shadow-xl
+                hover:-translate-y-2
+                hover:shadow-2xl
             "
         >
             <div className="space-y-2">

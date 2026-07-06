@@ -10,22 +10,31 @@ function DestinationGrid({ destinations }) {
     }
 
     return (
-        <div
-            className="
-                mt-8
-                grid
-                gap-6
-                sm:grid-cols-2
-                lg:grid-cols-3
-            "
-        >
-            {destinations.map((destination) => (
-                <DestinationCard
-                    key={destination.id}
-                    destination={destination}
-                />
-            ))}
-        </div>
+        <>
+            <h2 className="section-title">
+
+            Search Results
+
+            </h2>
+            <div
+                className="
+                    mt-8
+                    grid
+                    gap-6
+                    sm:grid-cols-2
+                    lg:grid-cols-3
+                "
+            >
+                {destinations.map((destination) => (
+                    <DestinationCard
+                        key={destination.id}
+                        destination={destination}
+                    />
+                ))}
+            </div>
+        </>
+
+
     );
 }
 
