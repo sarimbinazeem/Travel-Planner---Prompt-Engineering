@@ -12,6 +12,7 @@ function BudgetCard({ budget }) {
                 duration-300
                 hover:-translate-y-2
                 hover:shadow-2xl
+                hover-card
             "
         >
 
@@ -28,17 +29,47 @@ function BudgetCard({ budget }) {
 
             <div className="space-y-4">
 
-                <div className="flex justify-between">
+                <div
+                    className="
+                        flex
+                        items-center
+                        justify-between
+                        rounded-xl
+                        bg-slate-50
+                        px-5
+                        py-4
+                    "
+                >
                     <span>🏨 Hotel</span>
                     <span>${budget.hotel}</span>
                 </div>
 
-                <div className="flex justify-between">
+                <div
+                    className="
+                        flex
+                        items-center
+                        justify-between
+                        rounded-xl
+                        bg-slate-50
+                        px-5
+                        py-4
+                    "
+                >
                     <span>🍽 Food</span>
                     <span>${budget.food}</span>
                 </div>
 
-                <div className="flex justify-between">
+                <div
+                    className="
+                        flex
+                        items-center
+                        justify-between
+                        rounded-xl
+                        bg-slate-50
+                        px-5
+                        py-4
+                    "
+                >
                     <span>🚌 Transportation</span>
                     <span>${budget.transport}</span>
                 </div>

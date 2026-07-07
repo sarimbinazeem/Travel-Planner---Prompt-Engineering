@@ -17,14 +17,26 @@ function PlaceCard({ place }) {
             duration-300
             hover:-translate-y-2
             hover:shadow-2xl
+            hover-card
         "
             >
 
-            <h3 className="card-title">
+            <h3     className="
+                        text-xl
+                        font-black
+                        leading-snug
+                        text-slate-800
+                    ">
                 {properties.name || "Unnamed Place"}
             </h3>
 
-            <p className="card-text mt-3">
+            <p
+                className="
+                    mt-4
+                    line-clamp-3
+                    text-slate-500
+                "
+            >
                 {properties.formatted}
             </p>
 
@@ -56,7 +68,8 @@ function PlaceCard({ place }) {
                 hover:shadow-xl
                 "
             >
-                Open in Google Maps
+                Open in Maps →
+
             </a>
 
         </article>

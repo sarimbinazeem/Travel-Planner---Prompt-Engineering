@@ -31,6 +31,7 @@ function WeatherCard({ weather }) {
             duration-300
             hover:-translate-y-2
             hover:shadow-2xl
+            hover-card
         "
         >
             <div className="text-center">
@@ -61,10 +62,15 @@ function WeatherCard({ weather }) {
 
                 <div
                     className="
-                        rounded-2xl
-                        bg-slate-100
-                        p-5
+                        rounded-3xl
+                        border
+                        border-slate-200
+                        bg-gradient-to-br
+                        from-slate-50
+                        to-white
+                        p-6
                         text-center
+                        shadow-sm
                     "
                 >
 

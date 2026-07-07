@@ -22,7 +22,8 @@ function SearchBar({ onSearch, loading }) {
             bg-white
             p-5
             shadow-xl
-            md:flex-row
+            
+            lg:flex-row
             "
         >
             <input
@@ -36,18 +37,21 @@ function SearchBar({ onSearch, loading }) {
                 flex-1
                 rounded-2xl
                 border
-                border-slate-200
+                border-slate-300
                 bg-slate-50
-                px-6
+                px-5
+
                 py-4
+
+                lg:px-6
                 text-lg
-                outline-none
                 transition-all
                 duration-300
                 focus:border-blue-500
                 focus:bg-white
                 focus:ring-4
                 focus:ring-blue-100
+                outline-none
                 "
             />
 

@@ -38,40 +38,31 @@ function Navbar() {
                 >
                 
 
-                    <div
-                        className="
-                        flex
-                        h-12
-                        w-12
-                        items-center
-                        justify-center
-                        rounded-2xl
-                        bg-gradient-to-br
-                        from-blue-600
-                        to-cyan-500
-                        text-xl
-                        text-white
-                        shadow-lg
-                        "
-                    >
-                        ✈️
-                    </div>
+                <div className="flex items-center gap-3">
 
-                    <div>
+                <span className="text-3xl">
 
-                        <h2 className="text-xl font-bold text-slate-900">
+                🌍
 
-                            Travel Planner
+                </span>
 
-                        </h2>
+                <div>
 
-                        <p className="text-sm text-slate-500">
+                <h1 className="text-2xl font-black">
 
-                            Explore Smarter
+                Travel Planner
 
-                        </p>
+                </h1>
 
-                    </div>
+                <p className="text-xs text-slate-500">
+
+                Explore Smarter
+
+                </p>
+
+                </div>
+
+                </div>
 
                 </NavLink>
 
@@ -79,19 +70,30 @@ function Navbar() {
 
                     <NavLink
                         to="/"
-                        className={({ isActive }) =>
+                            className={({ isActive }) =>
 
                             `
-                            rounded-full
-                            px-5
+                            relative
+                            px-4
                             py-2
+                            rounded-xl
+                            font-medium
                             transition-all
                             duration-300
+
                             ${isActive
-                                ? "bg-blue-600 text-white shadow-lg"
-                                : "text-slate-700 hover:bg-slate-100"}
+
+                            ?
+
+                            "bg-blue-600 text-white shadow"
+
+                            :
+
+                            "text-slate-600 hover:bg-slate-100"
+
+                            }
                             `
-                        }
+                            }
                     >
                         Home
                     </NavLink>
@@ -100,16 +102,27 @@ function Navbar() {
                         to="/destination"
                         className={({ isActive }) =>
 
-                            `
-                            rounded-full
-                            px-5
-                            py-2
-                            transition-all
-                            duration-300
-                            ${isActive
-                                ? "bg-blue-600 text-white shadow-lg"
-                                : "text-slate-700 hover:bg-slate-100"}
-                            `
+                        `
+                        relative
+                        px-4
+                        py-2
+                        rounded-xl
+                        font-medium
+                        transition-all
+                        duration-300
+
+                        ${isActive
+
+                        ?
+
+                        "bg-blue-600 text-white shadow"
+
+                        :
+
+                        "text-slate-600 hover:bg-slate-100"
+
+                        }
+                        `
                         }
                     >
                         Destination

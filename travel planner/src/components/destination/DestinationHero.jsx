@@ -1,58 +1,81 @@
 function DestinationHero({ destination }) {
-    return (
-        <section
+  return (
+    <section
+      className="
+            relative
+            overflow-hidden
+            rounded-[40px]
+            "
+    >
+      <img
+        src={`https://picsum.photos/seed/${destination.city}/1600/600`}
+        alt={destination.city}
         className="
-                    rounded-3xl
-                    border
-                    border-slate-200
-                    bg-white
-                    p-8
-                    shadow-sm
-                    transition-all
-                    duration-300
-                    hover:-translate-y-2
-                    hover:shadow-2xl
+                        absolute
+                        inset-0
+                        h-full
+                        w-full
+                        object-cover
+                    "
+      />
+
+      <div
+        className="
+                absolute
+                inset-0
+                bg-gradient-to-r
+                from-slate-900/70
+                via-blue-900/40
+                to-cyan-800/30
                 "
-        >
-            <div className="absolute -left-20 -top-20 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
-            <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-cyan-300/20 blur-3xl" />
+      />
 
-            <div className="relative">
-                <p className="uppercase tracking-[0.3em] text-blue-100 text-sm font-semibold">
-                    Explore
-                </p>
+      <div className="relative p-10 text-white">
+        <div className="absolute -left-20 -top-20 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
+        <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-cyan-300/20 blur-3xl" />
 
-                <h1 className="mt-5 text-6xl font-black">
-                    {destination.city}
-                </h1>
+        <div className="relative">
+          <div
+            className="
+                        absolute
+                        right-0
+                        top-0
+                        h-72
+                        w-72
+                        rounded-full
+                        bg-white/10
+                        blur-3xl
+                    "
+          />
 
-                <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <p className="uppercase tracking-[0.3em] text-blue-100 text-sm font-semibold">
+            Explore
+          </p>
 
-                    <div className="rounded-2xl bg-white/15 p-6 backdrop-blur">
-                        <p className="text-blue-100 text-sm">Country</p>
-                        <h3 className="mt-3 text-2xl font-bold">
-                            {destination.country}
-                        </h3>
-                    </div>
+          <h1 className="mt-5 text-6xl font-black">{destination.city}</h1>
 
-                    <div className="rounded-2xl bg-white/15 p-6 backdrop-blur">
-                        <p className="text-blue-100 text-sm">Latitude</p>
-                        <h3 className="mt-3 text-xl font-bold">
-                            {destination.latitude}
-                        </h3>
-                    </div>
-
-                    <div className="rounded-2xl bg-white/15 p-6 backdrop-blur">
-                        <p className="text-blue-100 text-sm">Longitude</p>
-                        <h3 className="mt-3 text-xl font-bold">
-                            {destination.longitude}
-                        </h3>
-                    </div>
-
-                </div>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <div className="rounded-2xl bg-white/15 p-6 backdrop-blur">
+              <p className="text-blue-100 text-sm">Country</p>
+              <h3 className="mt-3 text-2xl font-bold">{destination.country}</h3>
             </div>
-        </section>
-    );
+
+            <div className="rounded-2xl bg-white/15 p-6 backdrop-blur">
+              <p className="text-blue-100 text-sm">Latitude</p>
+              <h3 className="mt-3 text-xl font-bold">{destination.latitude}</h3>
+            </div>
+
+            <div className="rounded-2xl bg-white/15 p-6 backdrop-blur">
+              <p className="text-blue-100 text-sm">Longitude</p>
+              <h3 className="mt-3 text-xl font-bold">
+                {destination.longitude}
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default DestinationHero;

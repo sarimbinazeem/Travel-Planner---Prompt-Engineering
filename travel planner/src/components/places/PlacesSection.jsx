@@ -14,6 +14,7 @@ function PlacesSection({ title, places }) {
             duration-300
             hover:-translate-y-2
             hover:shadow-2xl
+            hover-card
         ">
 
             <h2 
@@ -31,9 +32,13 @@ function PlacesSection({ title, places }) {
             {places.length === 0 ? (
                 <p className="text-gray-500">
                     <EmptyState
-                        icon="📍"
-                        title="Nothing Found"
-                        message="No nearby places were found for this category."
+
+                    icon="🗺️"
+
+                    title="Nothing Nearby"
+
+                    message="We couldn't find places in this category."
+
                     />
                 </p>
             ) : (

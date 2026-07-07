@@ -19,6 +19,18 @@ function useDestinationSearch() {
             const results = await searchDestinations(searchText);
 
             setDestinations(formatDestination(results));
+
+            setTimeout(()=>{
+
+                        document
+                        .getElementById("results")
+                        ?.scrollIntoView({
+
+                        behavior:"smooth"
+
+                        })
+
+                        },300)
         } catch (err) {
             setError(err.message);
             setDestinations([]);

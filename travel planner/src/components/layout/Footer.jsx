@@ -1,12 +1,52 @@
 function Footer() {
     return (
-        <footer className="bg-gray-900 text-white py-6 mt-auto">
-            <div className="container mx-auto text-center">
-                <p>
-                    © {new Date().getFullYear()} Travel Planner.
-                    All Rights Reserved.
-                </p>
-            </div>
+        <footer
+            className="
+            border-t
+            border-slate-200
+            bg-white/70
+            backdrop-blur
+            "
+        
+        >
+
+        <div
+        className="
+        page-container
+        py-10
+        flex
+        flex-col
+        gap-3
+        md:flex-row
+        justify-between
+        items-center
+        "
+        >
+
+        <div>
+
+        <h3 className="font-black text-xl">
+
+        🌍 Travel Planner
+
+        </h3>
+
+        <p>
+
+        Plan smarter. Travel better.
+
+        </p>
+
+        </div>
+
+        <p>
+
+        © 2026 Travel Planner • Built with React + Tailwind CSS
+
+        </p>
+
+        </div>
+
         </footer>
     );
 }

@@ -11,11 +11,26 @@ function InteractiveMap({
     city,
 }) {
     return (
+
+        <div
+            className="
+            overflow-hidden
+            rounded-3xl
+            shadow-xl
+            "
+            >
         <MapContainer
             center={[latitude, longitude]}
-            zoom={12}
+            zoom={13}
             scrollWheelZoom={false}
-            className="h-[450px] w-full rounded-3xl"
+            className="
+                h-[500px]
+                rounded-3xl
+                border
+                border-slate-200
+                shadow-xl
+                overflow-hidden
+                "
         >
 
             <TileLayer
@@ -34,6 +49,8 @@ function InteractiveMap({
             </Marker>
 
         </MapContainer>
+
+        </div>
     );
 }
 

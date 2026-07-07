@@ -12,6 +12,7 @@ function DestinationInfo({ destination }) {
             duration-300
             hover:-translate-y-2
             hover:shadow-2xl
+            hover-card
         "
         >
             <h2 className="mb-8 text-3xl font-black text-slate-800">

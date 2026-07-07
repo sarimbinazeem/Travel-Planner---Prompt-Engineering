@@ -75,10 +75,13 @@ function Home() {
                 className="
                 mt-6
                 max-w-4xl
-                text-5xl
+                text-4xl
+
+                sm:text-5xl
+
+                lg:text-7xl
                 font-black
                 leading-tight
-                md:text-7xl
                 "
             >
                 Discover Amazing
@@ -106,12 +109,7 @@ function Home() {
                 text-blue-100
                 "
             >
-                Search destinations, check live weather,
-                estimate your budget,
-                discover hotels,
-                transportation,
-                and famous attractions—
-                all inside one application.
+            Plan unforgettable journeys with real-time destination search, live weather forecasts, nearby hotels, famous attractions, transportation options, interactive maps, and intelligent budget estimates—all from one modern travel planning platform.
 
             </p>
 
@@ -141,6 +139,48 @@ function Home() {
         <SearchBar onSearch={handleSearch} loading={loading} />
       </section>
 
+      <section className="grid gap-6 md:grid-cols-4">
+
+            {[
+                ["190+", "Countries"],
+                ["Live", "Weather"],
+                ["Thousands", "Places"],
+                ["Free", "Trip Planner"],
+            ].map(([value, label]) => (
+
+                <article
+                    key={label}
+                    className="
+                        rounded-3xl
+                        bg-white
+                        p-8
+                        text-center
+                        shadow-sm
+                        transition-all
+                        duration-300
+                        hover:-translate-y-2
+                        hover:shadow-xl
+                    "
+                >
+
+                    <h2 className="text-4xl font-black text-blue-600">
+
+                        {value}
+
+                    </h2>
+
+                    <p className="mt-2 text-slate-500">
+
+                        {label}
+
+                    </p>
+
+                </article>
+
+            ))}
+
+        </section>
+
       <section>
         <div className="mb-8">
 
@@ -156,8 +196,14 @@ function Home() {
                 Explore
             </p>
                 {/* Results */}
-                               
-                <DestinationGrid destinations={destinations} />
+                       <section
+                        id="results"
+                        className="
+                        scroll-mt-24
+                        "
+                        >
+                          <DestinationGrid destinations={destinations} />
+                        </section>        
 
             <h2 className="mt-2 text-4xl font-black">
 
