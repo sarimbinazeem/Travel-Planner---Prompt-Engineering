@@ -9,7 +9,7 @@ function DestinationInfo({ destination }) {
                 shadow
             "
         >
-            <h2 className="mb-6 text-2xl font-bold">
+            <h2 className="mb-8 text-3xl font-black text-slate-800">
                 Destination Information
             </h2>
 

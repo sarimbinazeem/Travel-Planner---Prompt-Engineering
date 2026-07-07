@@ -46,9 +46,19 @@ function BudgetCard({ budget }) {
                     "
                 />
 
-                <div className="flex justify-between text-2xl font-bold text-emerald-600">
+                <div
+                    className="
+                        flex
+                        justify-between
+                        text-2xl
+                        font-black
+                        text-emerald-600
+                    "
+                >
                     <span>Total</span>
-                    <span>${budget.total}</span>
+                    <span className="font-semibold text-slate-700">
+                        ${budget.hotel}
+                    </span>
                 </div>
 
             </div>

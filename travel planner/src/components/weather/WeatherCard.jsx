@@ -34,11 +34,11 @@ function WeatherCard({ weather }) {
         >
             <div className="text-center">
 
-                <div className="text-6xl">
+                <div className="text-7xl">
                     {weatherIcon}
                 </div>
 
-                <h2 className="mt-4 text-5xl font-bold">
+                <h2 className="mt-4 text-6xl font-black text-slate-800">
                     {Math.round(weather.temperature)}°C
                 </h2>
 
@@ -58,7 +58,14 @@ function WeatherCard({ weather }) {
                             sm:grid-cols-2
                             xl:grid-cols-3">
 
-                <div className="rounded-xl bg-gray-100 p-4 text-center">
+                <div
+                    className="
+                        rounded-2xl
+                        bg-slate-100
+                        p-5
+                        text-center
+                    "
+                >
 
                     <p className="text-gray-500">
                         💧 Humidity
@@ -70,7 +77,14 @@ function WeatherCard({ weather }) {
 
                 </div>
 
-                <div className="rounded-xl bg-gray-100 p-4 text-center">
+                <div
+                    className="
+                        rounded-2xl
+                        bg-slate-100
+                        p-5
+                        text-center
+                    "
+                >
 
                     <p className="text-gray-500">
                         💨 Wind
