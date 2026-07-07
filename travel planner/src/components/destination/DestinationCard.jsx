@@ -18,15 +18,15 @@ function DestinationCard({ destination }) {
         >
             <div className="space-y-2">
 
-                <h2 className="text-2xl font-bold">
+                <h2 className="card-title">
                     📍 {destination.city}
                 </h2>
 
-                <p className="text-lg text-gray-700">
+                <p className="text-lg font-medium text-slate-700">
                     🌍 {destination.country}
                 </p>
 
-                <p className="text-sm text-gray-500">
+                <p className="card-text text-sm">
                     {destination.formatted}
                 </p>
 
@@ -35,21 +35,21 @@ function DestinationCard({ destination }) {
                 to={`/destination/${destination.id}`}
                 state={{ destination }}
                 className="
+                primary-button
                 mt-6
                 inline-flex
                 items-center
-                rounded-xl
+                gap-2
+                rounded-2xl
                 bg-gradient-to-r
                 from-blue-600
                 to-cyan-500
-                px-5
+                px-6
                 py-3
                 font-semibold
                 text-white
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:shadow-lg
+                shadow-lg
+                hover:shadow-2xl
                 "
                 
             >

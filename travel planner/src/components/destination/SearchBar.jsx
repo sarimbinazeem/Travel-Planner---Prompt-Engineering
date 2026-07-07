@@ -52,24 +52,21 @@ function SearchBar({ onSearch, loading }) {
             />
 
             <button
-                className="
-                rounded-2xl
-                bg-gradient-to-r
-                from-blue-600
-                to-cyan-500
-                px-8
-                py-4
-                font-semibold
-                text-white
-                shadow-lg
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:scale-105
-                hover:shadow-2xl
-                active:scale-95
-                "
-               >
+            className="
+            primary-button
+            rounded-2xl
+            bg-gradient-to-r
+            from-blue-600
+            to-cyan-500
+            px-8
+            py-4
+            font-semibold
+            text-white
+            shadow-lg
+            hover:shadow-2xl
+            active:scale-95
+            "
+                        >
                 {loading ? "Searching..." : "Search"}
             </button>
         </form>

@@ -20,11 +20,11 @@ function PlaceCard({ place }) {
         "
             >
 
-            <h3 className="text-lg font-bold">
+            <h3 className="card-title">
                 {properties.name || "Unnamed Place"}
             </h3>
 
-            <p className="mt-2 text-gray-600">
+            <p className="card-text mt-3">
                 {properties.formatted}
             </p>
 
@@ -39,22 +39,21 @@ function PlaceCard({ place }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                    mt-6
-                    inline-flex
-                    items-center
-                    rounded-xl
-                    bg-gradient-to-r
-                    from-blue-600
-                    to-cyan-500
-                    px-5
-                    py-3
-                    font-semibold
-                    text-white
-                    shadow-md
-                    transition-all
-                    duration-300
-                    hover:-translate-y-1
-                    hover:shadow-xl
+                primary-button
+                mt-6
+                inline-flex
+                items-center
+                gap-2
+                rounded-2xl
+                bg-gradient-to-r
+                from-blue-600
+                to-cyan-500
+                px-5
+                py-3
+                font-semibold
+                text-white
+                shadow-lg
+                hover:shadow-xl
                 "
             >
                 Open in Google Maps
