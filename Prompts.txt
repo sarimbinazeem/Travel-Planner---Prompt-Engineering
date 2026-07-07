@@ -1,0 +1,464 @@
+========================================================Prompt 1: Intro Prompt ================================================================
+I am going to create a travel planner web applications that helps user plan trips by telling destination information, budget , travel recommendations, and real-time travel updates The features for this websites that i want to add are as follows: # Features: # destinations details(location,travel dates) # budget approximaty # Weather info # Responsive UI # dark mode toggle # Hotel recommendaion # transportation # point of interests where toursit can vist # Currency exchange locations or help # real-time flight alerts Tell me if the features are good for a modern website or not? Dont code anything yet
+
+========================================================Prompt 2: Final Features and System Prompt========================================================
+According to your suggestion, im going to take these features into my project:
+ Destination search
+ Destination details
+ Trip dates
+ Budget estimation
+ Weather
+Hotel recommendations
+Transportation
+ Points of interest
+ Responsive UI
+Dark mode
+
+I want your system to follow the following rules and shape yourself around the following requirements and restrictions:
+
+You are a web developer that builds professional websites.
+
+The languages you can use:
+
+FrontENd:
+    -HTML
+    -CSS 
+    -JavaScript
+    -React
+    -Tailwind css
+Backend:
+    -Node 
+    -Express 
+    -Python  (For Possible AI integration )
+Database:
+    -MongoDB
+    
+Basic Rules and Principles:
+        -We will go phase by phase 
+        -Complete the task i assign you to do 
+        -Use modular approach with react components
+        -We move to the next phase when we review test debug
+        -Follow the basic and advanced coding principles
+        -Extend my project and dont remove any existing code 
+        -Ask before adding  big advancements
+        -Explain every thing you added that makes me understand greatly
+        -Explain every file created and where do you want me to write a certain function in a certain file.
+        -Whenever there is an error, you need to tell the cause, give fix step by step
+        -Dont rewrite whole fix of an error, please go step by step
+        -For improvements in the project you can ask questions to me 
+        -Keep the output concise and complete
+
+Dont code anything yet and just feed this int your system for now.
+
+
+==============================================Prompt 3: Roadmap Request==============================================
+   Now, Create an effective roadmap for this project  
+
+    Requirements:
+        -Logical division of phases with clear objective
+        -Explain briefly what are we doing in this phase and everything required for this phase
+        -Tell any prequisite before starting this project
+        -List any APIs framework needed for me to install before this phase
+        -Only tell phases for now and dont code yet
+        
+        
+    Also, guide me through creation of professional folder structure for this project
+
+    Tell every file and folder name extension, and whether it will be created yet or in the future
+
+
+==============================================Prompt 4: Phase 1 ==============================================
+    We are going through phase 1 now.
+    Make sure to follow all the system rules.
+
+    Requirements:
+        -Explain the goal, objectives of this phase
+        -Explain why we created a certain file
+        -Explain every block of code 
+        -Tell me exactly where a code snippet belongs to
+        -Do not move towards future phase until this phase is done 
+        -Provide a checklist, so i could check if i have done all the required for this phase
+
+
+==============================================Prompt 5: Phase 2 ==============================================
+
+I have done phase 1. I have create the folder and verified with your folder structure. I have also created the github repo and connected to my vs code with it. We can move towards phase 2 now, please follow all the system rules i have said to you. Make sure to start coding and giving me all the required code that is needed to complete this phase. If there is anything you want me to send before starting this phase then please tell me first then start with the phase.
+
+
+==============================================Prompt 6: prequisites for phase 2 ==============================================
+These are everything that you wanted:
+travel planner/package.json:
+{
+  "name": "react",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "eslint": "^10.6.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "globals": "^17.7.0",
+    "vite": "^8.1.1"
+  }
+}
+
+The folder structure is under travel planner, and is same as vite
+
+In vite folder, i have deleted the default assets and public image and App.css 
+
+Lets do the phase 2 now, step by step and make sure to follow all system rules i assigned.
+
+
+==============================================Prompt 6: Step 1 Phase 2 Completion ==============================================
+Step 1 for phase 2 worked fine.
+
+We can move on to the next steps, you can do as much steps you want in one prompt, but you can stop to a certain step if you need something from me or want to verfiy 
+
+please make sure to follow the system rules
+
+==============================================Prompt 7: Improvements for Phase 2 ==============================================
+I have done step 2 to step 4
+
+I have one concern.
+i want you to suggest if there is any improvements you can do for the pages in styling or profesionalism. I want the website to be advanced
+
+if there are any advancements you can do, please go ahead with it. Otherwise move towards step 5.
+
+Make sure to follow all the system rules
+
+==============================================Prompt 8: Phase 2 Step 5 ==============================================
+Please move towards step5 (you can do as many steps in one prompt but make sure to stop at one step if necesarry)
+
+make sure to follow the system prompt
+
+
+==============================================Prompt 9: Phase 2  Improvements request==============================================
+I have done phase 2 according to your steps.
+
+if there is any improvement that can make the website advanced make sure to help me add it.
+
+make sure to follow all the syste mrules
+
+if there are no improvements you can move towards phase 3 
+
+
+==============================================Prompt 10: Constants improvement + Time Constraint ==============================================
+I have done the constant improvement you suggested.
+
+I want to complete this project today so please tell me the imrpovements that can also make my project ready in short time.
+
+==============================================Prompt 11: Phase 2 Final Improvements ==============================================
+
+If there is any other improvements u suggest please tell me how to do it step by step and do as many improvements you can do in one prompt.
+
+If you dont suggest any impriovement theen we can move to phase 3
+
+Make sure to code everything telling me where to add what code
+make sure to follwo all the system rulkes
+
+
+==============================================Prompt 12: Phase 2 Error Fix ==============================================
+I ahve done all the improvmeents you suggested
+
+these are the errors i recieved
+1:20:16 pm [vite] Internal server error: Failed to resolve import "../pages/Home" from "src/pages/Home/index.js". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel planner/src/pages/Home/index.js:1:17
+  1  |  import Home from "../pages/Home";
+     |                    ^
+  2  |  
+      at TransformPluginContext._formatLog (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:29960:39)
+      at TransformPluginContext.error (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:29957:14)
+      at normalizeUrl (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:26993:18)
+      at async file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:27056:30
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:27024:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:29745:14)
+      at async loadAndTransform (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:19729:26)
+1:20:16 pm [vite] (client) Pre-transform error: Failed to resolve import "../pages/Home" from "src/pages/Home/index.js". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel planner/src/pages/Home/index.js:1:17
+  1  |  import Home from "../pages/Home";
+     |                    ^
+  2  |  
+
+
+make sure to tell me what is the error and fix all the errors in one prompt.
+make sure to follow te system rules
+
+==============================================Prompt 13: Phase 3 ==============================================
+The errors are resolved.
+
+the error was that i did wrong import line in index.js of home. I am ussing the barrel files for the pages.
+
+Please proceed wit hphase 3 
+
+Make sure to follow all the system rules, tell me if there is omething you want me to sned before phase 3.
+
+Make sure to do your most of phse 3 in one prompt.  Also keep time constraint in mind
+
+==============================================Prompt 14: Answer to prequisite for phase 3 ==============================================
+I have done my prequisite.
+
+I have done my api keys and have made .env file.
+
+We can start with phase 3 npow.
+
+you are advised to do your most in one prompt of phase 3.
+
+make usre to follow the system rules
+
+==============================================Prompt 15: Phase 3 Mile Stone 1 ==============================================
+Start with milestone 1 of phase 3 and make sure to focus on system rules aswell
+
+
+==============================================Prompt 16: Phase 3 Milestone 1 Error Fix ==============================================
+I have encountered error after phase 3
+
+File: C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel planner/src/hooks/useDocumentTitle.jsx:2:25
+  1  |  import { useEffect } from "react";
+  2  |  import { APP_NAME } from "../constants/app";
+     |                            ^
+  3  |  var _s = $RefreshSig$();
+  4  |  function useDocumentTitle(title) {
+2:41:02 pm [vite] (client) hmr update /src/pages/Home/Home.jsx
+2:41:02 pm [vite] (client) Pre-transform error: Failed to resolve import "../constants/app" from "src/hooks/useDocumentTitle.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel planner/src/hooks/useDocumentTitle.jsx:2:25
+  1  |  import { useEffect } from "react";
+  2  |  import { APP_NAME } from "../constants/app";
+     |                            ^
+  3  |  var _s = $RefreshSig$();
+  4  |  function useDocumentTitle(title) {
+
+
+Pelase make sure to fix these errors in minimal prompts taken (one if possible).
+Tell the fix step by step
+
+==============================================Prompt 17: Phase 3 Search Error ==============================================
+The compiler erros are fixed.
+
+Now when im searching anything on the we sbite it is saying failed to fetch destination for any search 
+
+==============================================Prompt 18: Phase 3 Milestone 2 ==============================================
+Please start with milestone 2 (Destination details) of Phase 3 from the start
+
+make sure to do as much as you can in one prompt
+
+make sure tof ollwo system rules
+
+==============================================Prompt 19: Phase 3 Milestone 3 ==============================================
+Lets move towards phase 3- milestone 3 (weather)
+
+make sure to follow all the system rules and make sure to do your most in the prompts.
+
+
+==============================================Prompt 20: Phase 3 Milestone 3 prequisite ==============================================
+yes i have my api in .env file
+
+you can start with milestone 3 and please make sure to do it by system rules
+
+==============================================Prompt 20: Phase 3 Milestone 4  ==============================================
+Lets move to milestone 4 
+
+please make sure to do yourr most in prompt
+if therre is anything you want to ask before mielstone 4 please do so
+make sure to follow all the syste mrules
+
+==============================================Prompt 21: Phase 3 Milestone 4 prequisite ==============================================
+I have obtained the api key of geoapify "Places API"
+
+tell me what changes i should do to my.env file
+
+I agree with your defaults of budget apporximation
+
+Please start with this mielstone and make sure to do your most in a prompt and to follow all the system rules 
+
+==============================================Prompt 22: Phase 3 Milestone 4 Erros Fixation ==============================================
+I have completed phase 3 milestone 4 but i am having errors.
+
+these are the errors
+5:53:59 pm [vite] Internal server error: Failed to resolve import "../../components/places/PlacesSection" from "src/pages/DestinationDetails/DestinationDetails.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel planner/src/pages/DestinationDetails/DestinationDetails.jsx:16:26
+  8  |  import MapPlaceholder from "../../components/destination/MapPlaceholder";
+  9  |  import usePlaces from "../../hooks/usePlaces";
+  10 |  import PlacesSection from "../../components/places/PlacesSection";
+     |                             ^
+  11 |  import BudgetCard from "../../components/budget/BudgetCard";
+  12 |  import { estimateBudget } from "../../utils/budgetEstimator";
+      at TransformPluginContext._formatLog (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:29960:39)
+      at TransformPluginContext.error (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:29957:14)
+      at normalizeUrl (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:26993:18)
+      at async file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:27056:30
+      at async Promise.all (index 9)
+      at async TransformPluginContext.transform (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:27024:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:29745:14)
+      at async loadAndTransform (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:19729:26)
+      at async viteTransformMiddleware (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:24160:20)
+5:53:59 pm [vite] (client) Pre-transform error: Failed to resolve import "../../components/places/PlacesSection" from "src/pages/DestinationDetails/DestinationDetails.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel planner/src/pages/DestinationDetails/DestinationDetails.jsx:16:26
+  8  |  import MapPlaceholder from "../../components/destination/MapPlaceholder";
+  9  |  import usePlaces from "../../hooks/usePlaces";
+  10 |  import PlacesSection from "../../components/places/PlacesSection";
+     |                             ^
+  11 |  import BudgetCard from "../../components/budget/BudgetCard";
+  12 |  import { estimateBudget } from "../../utils/budgetEstimator";
+5:53:59 pm [vite] (client) Pre-transform error: Failed to resolve import "../../components/places/PlacesSection" from "src/pages/DestinationDetails/DestinationDetails.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel planner/src/pages/DestinationDetails/DestinationDetails.jsx:16:26
+  8  |  import MapPlaceholder from "../../components/destination/MapPlaceholder";
+  9  |  import usePlaces from "../../hooks/usePlaces";
+  10 |  import PlacesSection from "../../components/places/PlacesSection";
+     |                             ^
+  11 |  import BudgetCard from "../../components/budget/BudgetCard";
+  12 |  import { estimateBudget } from "../../utils/budgetEstimator"; (x2)
+
+
+Please make sure to tell the root cause and also tell solution step by step 
+
+make sure to follow system rules
+
+==============================================Prompt 23: Phase 3 Improvements ==============================================
+The error is gone.
+
+I have now completely done phase 3 with all its milestones.
+
+I want you to tell me if there is anything from search,details, weather, trip planning that i can improve.
+Tell me improvements that i SHOULD add according to my time constraints aswell
+
+make sure to devide the list of improvements in this prompt only according to the system rules
+
+==============================================Prompt 24: Phase 3 Improvements LIST  ==============================================
+Please add the priority 1 improvements
+
+In the nexcxt prompt make sure to add mospt of the improvements in one prompt.
+
+Make sure to follow the system rules 
+
+
+==============================================Prompt 25: Phase 3 improvement Prequisite ==============================================
+I have added leaflet and all the requirments you mentioned.
+
+please proceed with this improvements. 
+
+Make sure to do the msot improvoemnts ion one proimpt and follow the syste mrules also
+
+==============================================Prompt 26: Phase 3 Improvement errors ==============================================
+I am getting these errors 
+7:25:00 pm [vite] (client) Pre-transform error: Failed to resolve import "../../components/map/InteractiveMap" from "src/pages/DestinationDetails/DestinationDetails.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel planner/src/pages/DestinationDetails/DestinationDetails.jsx:22:27
+  11 |  import BudgetCard from "../../components/budget/BudgetCard";
+  12 |  import { estimateBudget } from "../../utils/budgetEstimator";
+  13 |  import InteractiveMap from "../../components/map/InteractiveMap";
+     |                              ^
+  14 |  import SkeletonCard from "../../components/common/SkeletonCard";
+  15 |  import ErrorCard from "../../components/common/ErrorCard";
+7:25:00 pm [vite] (client) Pre-transform error: Failed to resolve import "../../components/map/InteractiveMap" from "src/pages/DestinationDetails/DestinationDetails.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel planner/src/pages/DestinationDetails/DestinationDetails.jsx:22:27
+  11 |  import BudgetCard from "../../components/budget/BudgetCard";
+  12 |  import { estimateBudget } from "../../utils/budgetEstimator";
+  13 |  import InteractiveMap from "../../components/map/InteractiveMap";
+     |                              ^
+  14 |  import SkeletonCard from "../../components/common/SkeletonCard";
+  15 |  import ErrorCard from "../../components/common/ErrorCard"; (x2)
+7:25:00 pm [vite] (client) Pre-transform error: Failed to resolve import "../../components/map/InteractiveMap" from "src/pages/DestinationDetails/DestinationDetails.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel planner/src/pages/DestinationDetails/DestinationDetails.jsx:22:27
+  11 |  import BudgetCard from "../../components/budget/BudgetCard";
+  12 |  import { estimateBudget } from "../../utils/budgetEstimator";
+  13 |  import InteractiveMap from "../../components/map/InteractiveMap";
+     |                              ^
+  14 |  import SkeletonCard from "../../components/common/SkeletonCard";
+  15 |  import ErrorCard from "../../components/common/ErrorCard"; (x3)
+7:25:00 pm [vite] Internal server error: Failed to resolve import "../../components/map/InteractiveMap" from "src/pages/DestinationDetails/DestinationDetails.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel planner/src/pages/DestinationDetails/DestinationDetails.jsx:22:27
+  11 |  import BudgetCard from "../../components/budget/BudgetCard";
+  12 |  import { estimateBudget } from "../../utils/budgetEstimator";
+  13 |  import InteractiveMap from "../../components/map/InteractiveMap";
+     |                              ^
+  14 |  import SkeletonCard from "../../components/common/SkeletonCard";
+  15 |  import ErrorCard from "../../components/common/ErrorCard";
+      at TransformPluginContext._formatLog (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:29960:39)
+      at TransformPluginContext.error (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:29957:14)
+      at normalizeUrl (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:26993:18)
+      at async file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:27056:30
+      at async Promise.all (index 12)
+      at async TransformPluginContext.transform (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:27024:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:29745:14)
+      at async loadAndTransform (file:///C:/Users/Sarim/Desktop/Github/Travel-Planner---Prompt-Engineering/travel%20planner/node_modules/vite/dist/node/chunks/node.js:19729:26)
+
+
+Please tell the root cause of the errors and also help me fix it step by step
+
+
+
+==============================================Prompt 26: Phase 3 Improvement fINALIZED ==============================================
+The error of phase 4 is fixed.
+
+ Is  there any improvements u suggest for this phase? 
+
+please keep in mind the time constraints and make only the lists of suggested improvements if any.
+
+make sure to follow system rules
+
+==============================================Prompt 27: Frontend request ==============================================
+The backend is done for website
+
+Now the website is simple and fucntional.
+But i want the website to be stylish aswell according to modern styles.
+
+Help me style the frontend of the website according to the system rules
+
+==============================================Prompt 28: Frontend phase A ==============================================
+Please proceed with the phase A of frontend
+
+Make sure to make it advanced professional and stylish according to the syste mrules 
+
+==============================================Prompt 29: Frontend Pahse b ==============================================
+Plewase proceed with next phase and make sure to follow system rules and do most of the tasks in one prompt
+
+==============================================Prompt 30: Frontend phase c ==============================================
+Move towards next styling
+
+Make sure to follow the system rules and doa s much as u can for one prompt
+
+==============================================Prompt 31: Final Polishing==============================================
+Please move towards polishing styling that is left for my website.
+
+Make sure to give as many styling in one prompt and make sure it is acording to the system rukes
+
+Make sthe styling modern professional
+
+==============================================Prompt 32: Final Website Testing==============================================
+its done
+
+Tell me if this is normal
+When i open the website and go to destination through navbar it shows me 404 Not found page, but when isearch paris then click on view dwetails it take me to destination apge with correct info
+
+==============================================Prompt 33: Changing of color of hero section==============================================
+
+i want to change the color of 
+Plan unforgettable journeys with real-time destination search, live weather forecasts, nearby hotels, famous attractions, transportation options, interactive maps, and intelligent budget estimates—all from one modern travel planning platform.
+
+and Your Smart Travel Companion
+
+to white which is on hero section
