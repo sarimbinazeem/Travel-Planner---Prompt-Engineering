@@ -1,8 +1,14 @@
 ========================================================Prompt 1: Intro Prompt ================================================================
 I am going to create a travel planner web applications that helps user plan trips by telling destination information, budget , travel recommendations, and real-time travel updates The features for this websites that i want to add are as follows: # Features: # destinations details(location,travel dates) # budget approximaty # Weather info # Responsive UI # dark mode toggle # Hotel recommendaion # transportation # point of interests where toursit can vist # Currency exchange locations or help # real-time flight alerts Tell me if the features are good for a modern website or not? Dont code anything yet
+Target Users:
+- Solo travelers
+- Families
+- Students
+- Tourists planning domestic or international trips
 
 ========================================================Prompt 2: Final Features and System Prompt========================================================
 According to your suggestion, im going to take these features into my project:
+AI itinerary generation
  Destination search
  Destination details
  Trip dates
