@@ -65,7 +65,7 @@ function Home() {
                 font-semibold
                 uppercase
                 tracking-[0.35em]
-                text-blue-100
+                 text-white
                 "
             >
                 Your Smart Travel Companion
@@ -106,7 +106,7 @@ function Home() {
                 max-w-2xl
                 text-lg
                 leading-8
-                text-blue-100
+                text-white
                 "
             >
             Plan unforgettable journeys with real-time destination search, live weather forecasts, nearby hotels, famous attractions, transportation options, interactive maps, and intelligent budget estimates—all from one modern travel planning platform.
