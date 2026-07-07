@@ -3,7 +3,18 @@ import EmptyState from "../common/EmptyState"
 
 function PlacesSection({ title, places }) {
     return (
-        <section className="rounded-2xl border bg-white p-8 shadow">
+        <section className="
+            rounded-3xl
+            border
+            border-slate-200
+            bg-white
+            p-8
+            shadow-sm
+            transition-all
+            duration-300
+            hover:-translate-y-2
+            hover:shadow-2xl
+        ">
 
             <h2 
                 className="

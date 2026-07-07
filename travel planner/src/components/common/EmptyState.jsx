@@ -4,7 +4,18 @@ function EmptyState({
     icon = "📍",
 }) {
     return (
-        <div className="rounded-2xl border border-dashed border-gray-300 bg-gray-50 p-8 text-center">
+        <div className="
+            rounded-3xl
+            border
+            border-slate-200
+            bg-white
+            p-8
+            shadow-sm
+            transition-all
+            duration-300
+            hover:-translate-y-2
+            hover:shadow-2xl
+        ">
 
             <div className="text-5xl">
                 {icon}

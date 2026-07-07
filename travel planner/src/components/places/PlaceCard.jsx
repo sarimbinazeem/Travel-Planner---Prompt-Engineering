@@ -6,19 +6,18 @@ function PlaceCard({ place }) {
     const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
     return (
             <article
-            className="
-                group
-                rounded-3xl
-                border
-                border-slate-200
-                bg-white
-                p-6
-                shadow-lg
-                transition-all
-                duration-300
-                hover:-translate-y-2
-                hover:shadow-2xl
-            "
+        className="
+            rounded-3xl
+            border
+            border-slate-200
+            bg-white
+            p-8
+            shadow-sm
+            transition-all
+            duration-300
+            hover:-translate-y-2
+            hover:shadow-2xl
+        "
             >
 
             <h3 className="text-lg font-bold">

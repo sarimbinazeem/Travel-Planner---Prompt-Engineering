@@ -1,6 +1,17 @@
 function SkeletonCard() {
     return (
-        <div className="animate-pulse rounded-xl border bg-white p-5 shadow">
+        <div className="
+            rounded-3xl
+            border
+            border-slate-200
+            bg-white
+            p-8
+            shadow-sm
+            transition-all
+            duration-300
+            hover:-translate-y-2
+            hover:shadow-2xl
+        ">
 
             <div className="h-6 w-2/3 rounded bg-gray-300" />
 

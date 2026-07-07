@@ -13,12 +13,17 @@ function SearchBar({ onSearch, loading }) {
         <form
             onSubmit={handleSubmit}
             className="
-                flex
-                flex-col
-                gap-4
-                md:flex-row
-                md:items-center
-                "
+            flex
+            flex-col
+            gap-4
+            rounded-[28px]
+            border
+            border-slate-200
+            bg-white
+            p-5
+            shadow-xl
+            md:flex-row
+            "
         >
             <input
                 type="text"
@@ -31,7 +36,7 @@ function SearchBar({ onSearch, loading }) {
                 flex-1
                 rounded-2xl
                 border
-                border-slate-300
+                border-slate-200
                 bg-slate-50
                 px-6
                 py-4
@@ -39,11 +44,10 @@ function SearchBar({ onSearch, loading }) {
                 outline-none
                 transition-all
                 duration-300
-                focus:border-blue-600
+                focus:border-blue-500
                 focus:bg-white
                 focus:ring-4
                 focus:ring-blue-100
-
                 "
             />
 
@@ -61,7 +65,8 @@ function SearchBar({ onSearch, loading }) {
                 transition-all
                 duration-300
                 hover:-translate-y-1
-                hover:shadow-xl
+                hover:scale-105
+                hover:shadow-2xl
                 active:scale-95
                 "
                >

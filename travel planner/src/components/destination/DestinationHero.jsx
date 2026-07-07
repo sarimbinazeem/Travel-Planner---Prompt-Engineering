@@ -1,18 +1,18 @@
 function DestinationHero({ destination }) {
     return (
         <section
-            className="
-                relative
-                overflow-hidden
-                rounded-[36px]
-                bg-gradient-to-br
-                from-sky-700
-                via-blue-600
-                to-cyan-500
-                p-10
-                text-white
-                shadow-2xl
-            "
+        className="
+                    rounded-3xl
+                    border
+                    border-slate-200
+                    bg-white
+                    p-8
+                    shadow-sm
+                    transition-all
+                    duration-300
+                    hover:-translate-y-2
+                    hover:shadow-2xl
+                "
         >
             <div className="absolute -left-20 -top-20 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
             <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-cyan-300/20 blur-3xl" />

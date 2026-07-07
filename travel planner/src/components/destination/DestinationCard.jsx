@@ -6,10 +6,10 @@ function DestinationCard({ destination }) {
             className="
                 rounded-3xl
                 border
-                border-gray-200
+                border-slate-200
                 bg-white
-                p-6
-                shadow-lg
+                p-8
+                shadow-sm
                 transition-all
                 duration-300
                 hover:-translate-y-2

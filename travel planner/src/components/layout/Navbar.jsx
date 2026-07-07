@@ -2,31 +2,42 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
     return (
-        <header
-            className="
-            sticky
-            top-0
-            z-50
-            border-b
-            border-slate-200
-            bg-white/80
-            backdrop-blur-xl
-            shadow-sm
-            "
-        >
-            <nav
+            <header
                 className="
-                page-container
-                flex
-                h-20
-                items-center
-                justify-between
+                    sticky
+                    top-0
+                    z-50
+                    border-b
+                    border-slate-200/70
+                    bg-white/80
+                    backdrop-blur-xl
+                    shadow-sm
                 "
             >
+
+            <nav
+                className="
+                    page-container
+                    flex
+                    h-20
+                    items-center
+                    justify-between
+                "
+            >
+
                 <NavLink
                     to="/"
-                    className="flex items-center gap-3"
+                    className="
+                        text-3xl
+                        font-black
+                        tracking-tight
+                        text-sky-600
+                        transition
+                        hover:scale-105
+                    "
                 >
+                
+
                     <div
                         className="
                         flex
@@ -69,17 +80,16 @@ function Navbar() {
                     <NavLink
                         to="/"
                         className={({ isActive }) =>
+
                             `
-                            rounded-xl
+                            rounded-full
                             px-5
                             py-2
-                            font-medium
                             transition-all
-                            ${
-                                isActive
-                                    ? "bg-blue-600 text-white"
-                                    : "text-slate-700 hover:bg-blue-50 hover:text-blue-600"
-                            }
+                            duration-300
+                            ${isActive
+                                ? "bg-blue-600 text-white shadow-lg"
+                                : "text-slate-700 hover:bg-slate-100"}
                             `
                         }
                     >
@@ -89,17 +99,16 @@ function Navbar() {
                     <NavLink
                         to="/destination"
                         className={({ isActive }) =>
+
                             `
-                            rounded-xl
+                            rounded-full
                             px-5
                             py-2
-                            font-medium
                             transition-all
-                            ${
-                                isActive
-                                    ? "bg-blue-600 text-white"
-                                    : "text-slate-700 hover:bg-blue-50 hover:text-blue-600"
-                            }
+                            duration-300
+                            ${isActive
+                                ? "bg-blue-600 text-white shadow-lg"
+                                : "text-slate-700 hover:bg-slate-100"}
                             `
                         }
                     >

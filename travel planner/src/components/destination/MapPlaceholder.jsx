@@ -1,17 +1,18 @@
 function MapPlaceholder() {
     return (
         <section
-            className="
-                flex
-                h-80
-                items-center
-                justify-center
-                rounded-2xl
-                border-2
-                border-dashed
-                border-gray-300
-                bg-gray-50
-            "
+        className="
+            rounded-3xl
+            border
+            border-slate-200
+            bg-white
+            p-8
+            shadow-sm
+            transition-all
+            duration-300
+            hover:-translate-y-2
+            hover:shadow-2xl
+        "
         >
             <p className="text-lg text-gray-500">
                 Interactive Map Coming Soon

@@ -2,12 +2,17 @@ function DestinationInfo({ destination }) {
     return (
         <section
             className="
-                rounded-2xl
-                border
-                bg-white
-                p-8
-                shadow
-            "
+            rounded-3xl
+            border
+            border-slate-200
+            bg-white
+            p-8
+            shadow-sm
+            transition-all
+            duration-300
+            hover:-translate-y-2
+            hover:shadow-2xl
+        "
         >
             <h2 className="mb-8 text-3xl font-black text-slate-800">
                 Destination Information

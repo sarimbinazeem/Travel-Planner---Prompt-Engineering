@@ -2,15 +2,16 @@ function BudgetCard({ budget }) {
     return (
         <section
             className="
-                rounded-2xl
+                rounded-3xl
                 border
+                border-slate-200
                 bg-white
                 p-8
-                shadow
+                shadow-sm
                 transition-all
                 duration-300
-                hover:-translate-y-1
-                hover:shadow-xl
+                hover:-translate-y-2
+                hover:shadow-2xl
             "
         >
 
@@ -56,8 +57,9 @@ function BudgetCard({ budget }) {
                     "
                 >
                     <span>Total</span>
-                    <span className="font-semibold text-slate-700">
-                        ${budget.hotel}
+
+                    <span className="font-semibold text-emerald-600">
+                        ${budget.total}
                     </span>
                 </div>
 
